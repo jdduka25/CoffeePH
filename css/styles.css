@@ -1,0 +1,765 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  height: 100%;
+  background-color: white;
+}
+
+@media (min-width: 992px) {
+  h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 3vw;
+    text-align: center;
+  }
+
+  h2 > span {
+    color: #b9834f;
+  }
+
+  h3 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 3vw;
+    text-align: center;
+    padding: 3% 0;
+  }
+
+  h4 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 1.5vw;
+    margin-top: 10%;
+  }
+
+  h5 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 0.8vw;
+    margin-top: 1%;
+  }
+
+  hr {
+    border-top: 2px solid #ffffff;
+    opacity: 1;
+  }
+
+  p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 1.2vw;
+    text-align: justify;
+    margin-top: 3%;
+  }
+
+  footer > p {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-size: 1vw;
+  }
+
+  br {
+    display: block;
+    content: "";
+    margin-top: 3%;
+  }
+
+  .navbar,
+  .navbar-brand {
+    padding: 0;
+  }
+
+  .brand {
+    height: 100%;
+    width: 300px;
+    margin-left: 25px;
+  }
+
+  .navigation > li {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 1.2vw;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  a:hover {
+    background: #b9834f;
+    color: #ffffff;
+  }
+
+  a.active {
+    background: #b9834f;
+    color: white !important;
+  }
+
+  .home {
+    background-image: url("images/HomeBG.png");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .homeContainer {
+    width: 800px;
+    height: 300px;
+    position: absolute;
+    top: 40%;
+    right: 3%;
+  }
+
+  .brandHeading {
+    font-family: "Merriweather", serif;
+    font-size: 7vw;
+    font-weight: 700;
+    letter-spacing: 25px;
+    color: white;
+    text-align: right;
+  }
+
+  .brandMsg {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 2.5vw;
+    color: white;
+    text-align: right;
+  }
+
+  .info {
+    padding: 5% 8%;
+  }
+
+  .info > p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 1.2vw;
+    text-align: justify;
+    text-indent: 8%;
+    margin-top: 8%;
+  }
+
+  .infoImg {
+    width: 100%;
+    height: auto;
+  }
+
+  .welcome {
+    padding: 0;
+  }
+
+  .brown {
+    background-color: #905b40;
+    color: white;
+  }
+
+  .visit {
+    width: 90%;
+    height: auto;
+    padding: 15% 0;
+    margin: auto;
+  }
+
+  .visit > img {
+    box-shadow: 5px 5px 5px #b9834f;
+    width: 100%;
+    height: auto;
+  }
+
+  .card {
+    width: 60%;
+    height: auto;
+    border: none;
+    background-color: #905b40;
+    color: #ffffff;
+    margin: 1% 3% 1% auto;
+    padding: 2%;
+  }
+
+  .mediaCard {
+    width: 50%;
+    height: auto;
+    color: #ffffff;
+    margin: 1% auto 1% 3%;
+    padding: 2%;
+  }
+
+  .contactInfo {
+    display: inline-block;
+    width: 49%;
+    height: auto;
+  }
+
+  .card > p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 0.8vw;
+  }
+
+  .socialMedia {
+    display: inline-block;
+    width: 49%;
+    height: auto;
+    text-align: center;
+    vertical-align: top;
+  }
+
+  .mediaCard > img {
+    width: 12%;
+    height: auto;
+    margin: 3% 2%;
+  }
+
+  .coffeeBanner {
+    width: 100%;
+    height: auto;
+  }
+
+  .cafe > h2 {
+    margin: 5% auto;
+    text-align: center;
+  }
+
+  .cafe > p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 1.5vw;
+    text-align: justify;
+    text-indent: 8%;
+    padding: 0 0 5%;
+  }
+
+  .about {
+    padding: 2%;
+  }
+
+  .mission {
+    margin: 5% auto;
+  }
+
+  .vision {
+    margin: 5% auto;
+  }
+
+  .mission > hr {
+    border-top: 3px solid #ffffff;
+    opacity: 1;
+  }
+
+  .vision > hr {
+    border-top: 3px solid #905b40;
+    opacity: 1;
+  }
+
+  .mission > h3 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 3vw;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+  }
+
+  .mission > p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 1.5vw;
+    text-align: left;
+  }
+
+  .vision > h3 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 3vw;
+    text-align: right;
+    padding: 0;
+    margin: 0;
+  }
+
+  .vision > p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 1.5vw;
+    text-align: right;
+  }
+
+  .menuTitle {
+    margin-bottom: 0;
+  }
+
+  .beans {
+    background-image: url("images/beanBG.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .list {
+    background-color: #737373;
+    border: 5px solid #ffffff;
+    border-radius: 5%;
+    padding: 1%;
+    color: #ffffff;
+    margin: 5% auto;
+    width: 28%;
+    height: auto;
+    padding: 2% 2%;
+  }
+
+  .list > h3 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 2vw;
+    text-align: center;
+    padding: 3% 0;
+    border: 2px solid #ffffff;
+  }
+
+  .item {
+    display: inline-block;
+    width: 70%;
+    height: auto;
+  }
+
+  .item > p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 1.2vw;
+    text-align: left;
+    padding: 3% 0;
+  }
+
+  .price {
+    display: inline-block;
+    width: 29%;
+    height: auto;
+  }
+
+  .price > p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 1.2vw;
+    text-align: right;
+    padding: 7.5% 0;
+  }
+
+  .contact1 {
+    background-image: url("images/coffeeLight.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5% 0;
+  }
+
+  .contactMsg {
+    width: 40%;
+    height: auto;
+    color: #ffffff;
+    padding: 5% 0;
+    margin-left: 5%;
+  }
+
+  .contactMsg > h2 {
+    text-align: left;
+  }
+
+  .contact2 {
+    background-image: url("images/contactBG.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5% 0;
+  }
+
+  .contactContent {
+    width: 40%;
+    height: 50%;
+    color: #ffffff;
+    padding: 2% 3%;
+    margin-left: auto;
+    margin-right: 5%;
+    border: 2px solid #ffffff;
+  }
+}
+
+/* ------------------------MOBILE CSS-----------------------------*/
+
+@media (max-width: 991px) {
+  h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 4.2vw;
+    text-align: center;
+  }
+
+  h2 > span {
+    color: #b9834f;
+  }
+
+  h3 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 4.2vw;
+    text-align: center;
+    padding: 5% 0 3%;
+  }
+
+  h4 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 3.5vw;
+    margin-top: 10%;
+  }
+
+  h5 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 3vw;
+    margin-top: 1%;
+  }
+
+  hr {
+    border-top: 2px solid #ffffff;
+    opacity: 1;
+    margin: 0;
+  }
+
+  p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 3vw;
+    text-align: justify;
+    margin-top: 3%;
+  }
+
+  footer > p {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-size: 2vw;
+  }
+
+  br {
+    display: block;
+    content: "";
+    margin-top: 3%;
+  }
+
+  .navbar,
+  .navbar-brand {
+    padding: 0;
+  }
+
+  .brand {
+    height: 100%;
+    width: 200px;
+    margin-left: 5px;
+  }
+
+  .navigation > li {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 3vw;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  a:hover {
+    background: #b9834f;
+    color: #ffffff;
+  }
+
+  a.active {
+    background: #b9834f;
+    color: white !important;
+  }
+
+  .home {
+    background-image: url("images/HomeBG.png");
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .homeContainer {
+    position: absolute;
+    top: 40%;
+    right: 3%;
+  }
+
+  .brandHeading {
+    font-family: "Merriweather", serif;
+    font-size: 8vw;
+    font-weight: 700;
+    letter-spacing: 5px;
+    color: white;
+    text-align: right;
+  }
+
+  .brandMsg {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 3vw;
+    color: white;
+    text-align: right;
+  }
+
+  .info {
+    padding: 5% 8%;
+  }
+
+  .info > p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 3vw;
+    text-align: justify;
+    text-indent: 8%;
+    margin-top: 8%;
+  }
+
+  .infoImg {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+  }
+
+  .welcome {
+    padding: 0;
+  }
+
+  .brown {
+    background-color: #905b40;
+    color: white;
+  }
+
+  .visit {
+    width: 60%;
+    height: auto;
+    padding: 5% 0;
+    margin: auto;
+  }
+
+  .visit > img {
+    box-shadow: 5px 5px 5px #b9834f;
+    width: 100%;
+    height: auto;
+  }
+
+  .card {
+    width: 80%;
+    height: auto;
+    border: none;
+    background-color: #905b40;
+    color: #ffffff;
+    margin: 0 auto;
+    padding: 5%;
+  }
+
+  .mediaCard {
+    width: 80%;
+    height: auto;
+    color: #ffffff;
+    margin: 1% auto;
+    padding: 2%;
+  }
+
+  .contactInfo {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .card > p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 2.5vw;
+  }
+
+  .socialMedia {
+    width: 80%;
+    height: auto;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .mediaCard > img {
+    width: 12%;
+    height: auto;
+    margin: 3% 2%;
+  }
+
+  .coffeeBanner {
+    width: 100%;
+    height: auto;
+  }
+
+  .cafe > h2 {
+    margin: 5% auto;
+    text-align: center;
+  }
+
+  .cafe > p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 3vw;
+    text-align: justify;
+    text-indent: 8%;
+    padding: 0 5% 5%;
+  }
+
+  .about {
+    padding: 2%;
+  }
+
+  .mission {
+    margin: 5% auto;
+    padding: 0 3%;
+  }
+
+  .vision {
+    margin: 5% auto;
+    padding: 3% auto;
+  }
+
+  .mission > hr {
+    border-top: 3px solid #ffffff;
+    opacity: 1;
+  }
+
+  .vision > hr {
+    border-top: 3px solid #905b40;
+    opacity: 1;
+  }
+
+  .mission > h3 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 4.2vw;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+  }
+
+  .mission > p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 3vw;
+    text-align: left;
+  }
+
+  .vision > h3 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 4.2vw;
+    text-align: right;
+    padding: 0;
+    margin: 0;
+  }
+
+  .vision > p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 3vw;
+    text-align: right;
+  }
+
+  .menuTitle {
+    margin-bottom: 0;
+  }
+
+  .beans {
+    background-image: url("images/beanBG.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .list {
+    background-color: #737373;
+    border: 5px solid #ffffff;
+    border-radius: 5%;
+    padding: 1%;
+    color: #ffffff;
+    margin: 5% auto;
+    width: 70%;
+    height: auto;
+    padding: 2% 2%;
+  }
+
+  .list > h3 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 3.5vw;
+    text-align: center;
+    padding: 3% 0;
+    border: 2px solid #ffffff;
+  }
+
+  .item {
+    display: inline-block;
+    width: 70%;
+    height: auto;
+  }
+
+  .item > p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 3vw;
+    text-align: left;
+    padding: 3% 0;
+  }
+
+  .price {
+    display: inline-block;
+    width: 28%;
+    height: auto;
+  }
+
+  .price > p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 3vw;
+    text-align: right;
+    padding: 7.5% 0;
+  }
+
+  .contact1 {
+    background-image: url("images/coffeeLightLG.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10% 0;
+  }
+
+  .contactMsg {
+    width: 50%;
+    height: auto;
+    color: #ffffff;
+    padding: 10% 0;
+    margin-left: 5%;
+  }
+
+  .contactMsg > h2 {
+    text-align: left;
+  }
+
+  .contact2 {
+    background-image: url("images/contactBGLG.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10% 0;
+  }
+
+  .contactContent {
+    width: 55%;
+    height: 50%;
+    color: #ffffff;
+    padding: 2% 3%;
+    margin-left: auto;
+    margin-right: 5%;
+    border: 2px solid #ffffff;
+  }
+}
