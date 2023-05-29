@@ -9,6 +9,41 @@ html {
   background-color: white;
 }
 
+/* animation */
+
+.animation-left {
+  opacity: 0;
+  transform: translateX(-20%);
+  transition: all 0.7s ease-out;
+  transition-delay: 0.2s;
+}
+
+.animation-right {
+  opacity: 0;
+  transform: translateX(20%);
+  transition: all 0.7s ease-out;
+  transition-delay: 0.2s;
+}
+
+.animation-top {
+  opacity: 0;
+  transform: translateY(-20%);
+  transition: all 0.7s ease-out;
+  transition-delay: 0.2s;
+}
+
+.animation-bot {
+  opacity: 0;
+  transform: translateY(20%);
+  transition: all 0.7s ease-out;
+  transition-delay: 0.2s;
+}
+
+.scroll-animation {
+  opacity: 1;
+  transform: none;
+}
+
 @media (min-width: 992px) {
   h2 {
     font-family: "Montserrat", sans-serif;
